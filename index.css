@@ -1,0 +1,81 @@
+
+:root{
+    --bdcolor:rgb(255,255,255);
+    --hoverColor:rgb(197, 107, 245);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+#header{
+    background: var(--bdcolor);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+}
+#header a{
+    text-decoration: none;
+    padding: 10px 10px;
+    text-decoration: underline;
+}
+
+/* 导航栏属性设置 */
+#guide {
+    width: 10%;
+    text-align: center;
+    position: fixed;
+    top: 4%;
+    overflow: scroll;
+    height: 90%;
+    display: block;
+}
+#guide::-webkit-scrollbar{
+    display: none;
+}
+#guide a{
+    display: block;
+    text-decoration: none;
+    margin: 3%;
+}
+#guide a:hover{
+    background-color: var(--hoverColor);
+}
+
+
+#mainBox{
+    position: relative;
+    left: 12%;
+    margin-top: 2%;
+    background-color: var(--bdcolor);
+    width: 87%;
+    display: block;
+}
+
+.classificationTitle{
+    color: rgb(166, 61, 237);
+    font-size:x-large;
+}
+
+.ItemTitle{
+    color: rgb(94, 94, 239);
+    font-size: large;
+}
+.ItemDetail{
+    color: black;
+}
+
+
+#footer {
+    position: relative;
+    top: 50%;
+    width: 99%;
+    text-align: center;
+    background-color: var(--bdcolor);
+    display: block;
+}
+#footer a{
+    color: black;
+}

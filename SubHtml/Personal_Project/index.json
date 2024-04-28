@@ -1,0 +1,10 @@
+{
+    "classification":"Personal_Project",
+    "classification_CN":"个人项目",
+    "PageMsg":[
+        {
+        "fileName":"zFOC.html",
+        "title":"zFOC项目",
+        "detail":"使用stm32rgt6控制3组mos，输出三相电流，完成2800电机的有感闭环矢量控制"
+    }]
+}
