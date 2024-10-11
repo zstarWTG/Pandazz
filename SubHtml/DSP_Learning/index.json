@@ -6,6 +6,10 @@
         "fileName":"1-Introduce_of_F28335.html",
         "title":"1-F28335基本介绍",
         "detail":"介绍F28338开发板资源和基本模块"
+    },{
+        "fileName":"2-clock_system.html",
+        "title":"2-时钟系统",
+        "detail":"介绍基本时钟系统的结构组成，以及相关的配置说明"
     }
 ]
 }
