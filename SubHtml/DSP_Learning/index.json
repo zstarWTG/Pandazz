@@ -10,6 +10,10 @@
         "fileName":"2-clock_system.html",
         "title":"2-时钟系统",
         "detail":"介绍基本时钟系统的结构组成，以及相关的配置说明"
+    },{
+        "fileName":"6-KEYS-experiment.html",
+        "title":"6-按键实验",
+        "detail":"介绍并完成按键实验"
     }
 ]
 }
