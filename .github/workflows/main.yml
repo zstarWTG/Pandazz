@@ -24,7 +24,7 @@ jobs:
         # your sftp server port, default to 22
         port: 22
         # you can copy private_key from your *.pem file, keep format
-        ssh_private_key: x
+        ssh_private_key: ${{secrets.SSH_KEY}}
         # will put all file under this path
         local_path: ./*
         # files will copy to under remote_path
@@ -36,5 +36,5 @@ jobs:
         # This operation will delete all files in the remote path before upload. Please be careful set this to true
         #delete_remote_files: # optional
         # SSH passsword，If a password is set, the secret key pair is ignored
-        password: ${{secrets.PASSWORD}}
+        # password: ${{secrets.PASSWORD}}
           
