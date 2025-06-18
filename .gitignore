@@ -1,2 +1,4 @@
 *.md
 *.tif
+.idea
+/WaveDrom/canvgjs/*

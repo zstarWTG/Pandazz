@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column; /* 纵向排列 */
+    margin: 0;
+}
+
+textarea {
+    width: 100vw; /* 页面宽度 */
+    height: 50vh; /* 占据一半高度 */
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+div {
+    width: 100vw; /* 页面宽度 */
+    flex-grow: 1; /* 剩余空间由 div 占据 */
+}
+.download-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+    width: 15vw;
+  display: flex;
+  /*flex-direction: column; !* 纵向排列更节省空间 *!*/
+  gap: 10px;
+  z-index: 1000;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.download-buttons button {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.download-buttons button:hover {
+  background-color: #0056b3;
+}
