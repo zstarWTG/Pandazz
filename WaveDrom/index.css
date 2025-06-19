@@ -1,13 +1,13 @@
 body {
     display: flex;
     flex-direction: column; /* 纵向排列 */
-    margin: 0;
+    margin: 3px;
 }
 
 
 
 #editor {
-    width: 100vw;
+    width: 98vw;
     height: 50vh;
     padding: 10px;
     font-family: monospace;
@@ -26,7 +26,7 @@ body {
 }
 
 div {
-    width: 100vw; /* 页面宽度 */
+    width: 98vw; /* 页面宽度 */
     flex-grow: 1; /* 剩余空间由 div 占据 */
 }
 
