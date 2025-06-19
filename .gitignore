@@ -2,3 +2,4 @@
 *.tif
 .idea
 /WaveDrom/canvgjs/*
+/WaveDrom/codemirror/*

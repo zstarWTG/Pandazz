@@ -4,45 +4,62 @@ body {
     margin: 0;
 }
 
-textarea {
-    width: 100vw; /* 页面宽度 */
-    height: 50vh; /* 占据一半高度 */
+
+
+#editor {
+    width: 100vw;
+    height: 50vh;
     padding: 10px;
-    box-sizing: border-box;
-    font-size: 18px;
+    font-family: monospace;
+    white-space: pre;
+    border: 1px solid #ccc;
+    overflow: auto;
+    background-color: #f9f9f9;
+}
+
+.keyword {
+    color: blue;
+}
+
+.string {
+    color: green;
 }
 
 div {
     width: 100vw; /* 页面宽度 */
     flex-grow: 1; /* 剩余空间由 div 占据 */
 }
+
 .download-buttons {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-    width: 15vw;
-  display: flex;
-  /*flex-direction: column; !* 纵向排列更节省空间 *!*/
-  gap: 10px;
-  z-index: 1000;
-  background: white;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 360px;        /* 固定宽度 */
+    height: auto;        /* 高度由内容决定 */
+    display: flex;
+    gap: 10px;           /* 按钮间距固定 */
+    z-index: 1000;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transform: none;     /* 确保无缩放变形 */
+    font-size: 14px;     /* 固定字体大小 */
 }
 
-
 .download-buttons button {
-  padding: 10px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+    flex: 1;              /* 可选：让按钮均匀分布 */
+    min-width: 80px;      /* 最小宽度固定 */
+    padding: 10px 15px;   /* 固定内边距 */
+    font-size: 14px;      /* 固定字体大小 */
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 .download-buttons button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }

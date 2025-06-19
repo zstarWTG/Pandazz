@@ -11,17 +11,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
             type="text/javascript"></script>
     <script src="canvg.js" type="text/javascript"></script>
-    <script src="index.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
+
     <link rel="stylesheet" href="index.css">
 </head>
 <body onload="WaveDrom.ProcessAll()">
-<textarea id="inputScript">
-{ signal : [
-  { name: "clk",  wave: "p......" },
-  { name: "bus",  wave: "x.34.5x",   data: "head body tail" },
-  { name: "wire", wave: "0.1..0." },
-]}
-    </textarea>
+<!-- 原始 textarea 隐藏 -->
+
+
+<!-- 可编辑 div 替代 textarea -->
+<div id="editor" contenteditable="true" spellcheck="false"></div>
+
+
+
 
 <div>
     <script id="waveDromScript" type="WaveDrom">
@@ -35,8 +37,11 @@
 
 <!-- 下载按钮 -->
 <div class="download-buttons">
-  <button onclick="downloadSVG()">Download SVG</button>
-  <button onclick="downloadPNG()">Download PNG</button>
+    <button onclick="loadJSON()">Load Json</button>
+    <button onclick="downloadJSON()">Save Json</button>
+    <button onclick="downloadSVG()">Download SVG</button>
+    <button onclick="downloadPNG()">Download PNG</button>
+
 </div>
 
 </body>
