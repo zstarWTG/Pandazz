@@ -28,7 +28,7 @@ jobs:
         # will put all file under this path
         local_path: ./*
         # files will copy to under remote_path
-        remote_path: /home/${{secrets.USERNAME}}/nginx/html/
+        remote_path: /home/zzstar/nginx/html/
         # connection via sftp protocol only
         sftp_only: true
         # sftp args
